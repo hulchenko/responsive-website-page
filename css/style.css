@@ -91,10 +91,6 @@ section {
   cursor: pointer;
 }
 
-.toggle:hover {
-  transform: scale(0.98);
-}
-
 .toggle.active {
   background: var(--primary-color) url(../images/close.png);
   background-size: 25px;
