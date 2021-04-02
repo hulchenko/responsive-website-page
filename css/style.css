@@ -173,6 +173,51 @@ section.home {
   max-width: 100px;
 }
 
+/* WORK PAGE */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.portfolio .item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+}
+
+.portfolio .item img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .item .action {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portfolio .item .action a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px 15px;
+}
+
+.portfolio .item:hover .action {
+  opacity: 1;
+}
 /* TOGGLE */
 .toggle {
   position: fixed;
@@ -180,7 +225,7 @@ section.home {
   right: 0;
   width: 60px;
   height: 60px;
-  background: var(--primary-color) url(../images/menu.png); /*sandwitch icon*/
+  background: var(--primary-color) url(../images/menu.png); /*sandwich icon*/
   z-index: 20;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -219,6 +264,9 @@ section.home {
 
   .services {
     grid-template-columns: 1fr;
+  }
+  .services .service {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
 }
 
